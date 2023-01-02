@@ -8,4 +8,14 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+    a = len(s)
+    if a > 2:
+        if a % 2 == 1:
+            return s[a // 2]
+        else:
+            return s[a//2 - 1] + s[a//2]
+    else:
+        return "Please enter text longer than 2"
+print(main("coder"))
+print(main("code"))
+print(main("cd"))
