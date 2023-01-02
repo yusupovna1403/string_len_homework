@@ -9,4 +9,11 @@ def main(num1, num2):
     Returns:
         str: answer
     """
-    return
+    num1 = int(num1)
+    num2 = int(num2)
+    if num1 >= 0 and num1 - int(num1) == 0 and num2 > 0 and num2 - int(num2) == 0:
+        ans = num1 + num2
+        return str(ans)
+    else:
+        return "Please,enter non-negative integers,represented as string"
+print(main("12","5"))
