@@ -8,4 +8,13 @@ def main(s):
     Returns:
         bool: answer
     """
-    return
+    if len(s) == 3:
+        if s[0] == s[2]:
+            return True
+        else:
+            return False
+    else:
+        return "Please,enter a string of length three"
+print(main("cdc"))
+print(main("ccd"))
+print(main("dfghj"))
